@@ -1,0 +1,173 @@
+<img src="../../../../assets/img/maincard.png" alt="main card" class="main-card">
+<div class="row header">
+  <h2 class="header-txt col-auto">مدرسه آنلاین آواز</h2>
+  <img src="../../../../assets/img/notes.png" alt="notes" class="col-auto header-img" />
+</div>
+<div class="container main-par mt-3">
+  <p class="main-par-text mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+    گرافیک
+    است،
+    چاپگرها و متون
+    بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+    هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+    متخصصان
+    را می طلبد.
+  </p>
+  <div class="row btn-box">
+    <button type="button" class="btn btn-register px-4 col-auto mx-3 mt-5" routerLink="/register"
+      routerLinkActive="true">
+      ثبت نام کنید</button>
+    <button type="button" class="btn btn-register px-4 col-auto me-2 mt-5">مشاهده دوره ها</button>
+  </div>
+</div>
+<input type="text" placeholder="جستجوی دوره ها" class="search-bar py-1" /><i class="bx bx-search search-icon"></i>
+<div class="container mt-2 mb-5">
+  <div class="row header-pos">
+    <h3 class="course-header col-auto">جدید ترین دوره های ملودی منتور</h3>
+  </div>
+  <div class="row mt-5 justify-content-around mb-5">
+    <app-course-preview class="col-3" [picUrl]="'../../../../assets/img/course-1.png'"></app-course-preview>
+    <app-course-preview class="col-3" [picUrl]="'../../../../assets/img/course2.png'"></app-course-preview>
+    <app-course-preview class="col-3" [picUrl]="'../../../../assets/img/course3.png'"></app-course-preview>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row header-pos mt-5">
+    <img src="../../../../assets/img/Line 1.png" alt="line" class="col-auto mt-5" />
+  </div>
+  <div class="row header-pos mt-4">
+    <h3 class="col-auto">کارائوکه</h3>
+  </div>
+  <div class="row mt-4 mx-5 justify-content-between">
+    <p class="col-7 karoke-text align-bottom mb-0 mt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+      استفاده
+      از طراحان
+      گرافیک است،
+      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+      کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی شناخت فراوان جامعه و متخصصان را می طلبدو
+      فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها به
+      پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+      استفاده قرار گیرد.
+    </p>
+    <img src="../../../../assets/img/Karaoke-bro.png" alt="karaoke" class="col-4" />
+  </div>
+</div>
+
+<div class="container m-0 p-0 karoke-back full-back">
+  <div class="row me-5 mt-4 px-5 py-3">
+    <h6 class="me-5">محبوب ترین ها:</h6>
+  </div>
+  <div class="row justify-content-center pb-4">
+    <app-karaoke-preview class="col-auto mx-0"></app-karaoke-preview>
+    <app-karaoke-preview class="col-auto mx-0"></app-karaoke-preview>
+    <app-karaoke-preview class="col-auto mx-0"></app-karaoke-preview>
+    <app-karaoke-preview class="col-auto mx-0"></app-karaoke-preview>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center mt-4">
+    <button type="button" class="btn col-auto btn-register p-3 px-4">برای مشاهده آهنگ ها کلیک کنید</button>
+  </div>
+  <div class="row header-pos">
+    <img src="../../../../assets/img/Line 2.png" alt="line" class="col-auto mt-5" />
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center mb-5">
+    <h4 class="col-auto course-header">ویژگی های ملودی منتور</h4>
+  </div>
+  <div class="row mt-5 mx-5 justify-content-center mb-5">
+    <img src="../../../../assets/img/options.png" class="col-auto mx-5 mb-5" />
+  </div>
+</div>
+
+<div class="container mt-5 m-0 max-width px-0 full-back random-back mb-5">
+  <div class="row justify-content-center mt-5">
+    <img src="../../../../assets/img/randomRec.png" class="col-auto position-absolute" />
+    <span class="col-auto header-txt random-text">یه چیز رندممم</span>
+  </div>
+  <div class="container margin-top fix-height mb-5">
+    <div class="row">
+      <div class="col-6">
+        <app-box-circle></app-box-circle>
+      </div>
+      <div class="col-6">
+        <app-box-circle></app-box-circle>
+      </div>
+    </div>
+    <div class="row margin-top">
+      <div class="col-6">
+        <app-box-circle></app-box-circle>
+      </div>
+      <div class="col-6">
+        <app-box-circle></app-box-circle>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container m-0 p-0 karoke-back full-back margin-top10">
+  <div class="row me-5 mt-4 px-5 py-3">
+    <h4 class="me-5 course-header mt-5">درباره ملودی منتور</h4>
+  </div>
+  <div class="row pe-5 row-height">
+    <div class="col-6 me-5 pe-5 karoke-text">
+      <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+        هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+        متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط
+        سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+        طراحی اساسا مورد استفاده قرار گیرد.</p>
+    </div>
+    <img src="../../../../assets/img/rects.png" class="col-5 rects" />
+  </div>
+</div>
+
+
+<div class="container mt-5 m-0 px-0 full-back footer-con margin-top10">
+  <img src="../../../../assets/img/footer.png" class="course-row" />
+  <div class="container footer-text-con">
+    <div class="row justify-content-between">
+      <span class="col-6">خدمات مشتریان</span>
+      <span class="col-5">درباره آواموز</span>
+    </div>
+    <div class="row justify-content-between">
+      <a class="col-5" href="#">سوالات متداول</a>
+      <a class="col-5" href="#">تماس با ما</a>
+    </div>
+    <div class="row justify-content-between">
+      <a class="col-5" href="#"></a>
+      <a class="col-5" href="#">بلاگ</a>
+    </div>
+  </div>
+
+  <div class="container footer-Logo-con">
+    <div class="row">
+      <div class="col-auto">
+        <img src="../../../../assets/img/footerLogo.png" />
+      </div>
+      <div class="col-auto me-4">
+        <i class="bx bxl-youtube icons me-5"></i>
+      </div>
+      <div class="col-auto">
+        <i class="bx bxl-twitter icons"></i>
+      </div>
+      <div class="col-auto">
+        <i class="bx bxl-telegram icons"></i>
+      </div>
+      <div class="col-auto">
+        <i class="bx bxl-instagram-alt icons"></i>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <label class="icon-txt">از آخرین دوره ها باخبر شو!</label>
+    </div>
+    <div class="row mt-2 me-1">
+      <input type="text" placeholder="ایمیل خود را وارد کنید" class="input-email p-1" />
+      <button type="button" class="btn btn-register col-2 py-0 email-btn">ثبت</button>
+    </div>
+  </div>

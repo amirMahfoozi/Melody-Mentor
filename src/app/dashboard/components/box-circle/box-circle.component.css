@@ -1,0 +1,15 @@
+.con {
+  background: rgba(153, 206.04, 255, 0.50);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(1rem);
+  width: 31.5rem;
+}
+
+.text {
+  text-align: right;
+  color: #053881;
+  font-size: 0.9rem;
+  font-weight: 300;
+  word-wrap: break-word;
+
+}

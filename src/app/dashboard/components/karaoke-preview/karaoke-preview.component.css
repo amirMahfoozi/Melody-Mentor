@@ -1,0 +1,57 @@
+.container-border {
+  background: url(../../../../assets/img/karoke.png);
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.course-size {
+  width: 11rem !important;
+  display: inline-block;
+}
+
+.course-img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
+}
+
+.karoke-img {
+  margin: 0.5rem;
+  position: relative;
+  top: 0;
+  border-radius: 1rem;
+}
+
+.detail {
+  color: #194F94;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.back-gray {
+  background-color: rgb(220, 220, 220);
+  --bs-gutter-x: 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.btn-register {
+  background-image: linear-gradient(#FF681D, #FF6060);
+  border-radius: 3em;
+  color: #fff;
+  border: none;
+  font-weight: 300;
+  height: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #FF681D;
+}
+
+.btn-box {
+  padding-top: 0.5rem;
+}

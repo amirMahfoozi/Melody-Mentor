@@ -1,0 +1,209 @@
+.main-card {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 6.4rem;
+  right: 5rem;
+  align-items: baseline;
+}
+
+
+.header-txt {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.header-img {
+  margin-right: -2rem !important;
+}
+
+.main-par {
+  position: absolute;
+  top: 12.4rem;
+  right: 5rem;
+  width: 35rem;
+}
+
+.main-par-text {
+  color: white;
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: 2.3;
+  letter-spacing: 2;
+}
+
+.btn-register {
+  background-image: linear-gradient(#FF7733, #FF6060);
+  border-radius: 3em;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+  box-shadow: 0px 3.6226720809936523px 3.6226720809936523px rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+  backdrop-filter: blur(1.5rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-box {
+  justify-content: end;
+  padding-left: 1rem;
+}
+
+.search-bar {
+  position: relative;
+  padding-right: 2rem;
+  top: -1.5rem;
+  right: 25%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 1.5rem;
+  border: 5.89px rgba(255, 255, 255, 0.05) solid;
+  backdrop-filter: blur(2rem);
+}
+
+.search-icon {
+  position: relative;
+  top: -1.3rem;
+  right: -25%;
+  margin-right: 0.8rem;
+}
+
+.course-header {
+  color: #194F94;
+  font-weight: 500;
+}
+
+.header-pos {
+  justify-content: center;
+}
+
+.course-row {
+  width: 100%;
+}
+
+.width {
+  width: 22rem !important;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.karoke-text {
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: 2;
+  letter-spacing: 1.5;
+}
+
+.karoke-back {
+  background-color: #DDE8f5;
+  max-width: none;
+}
+
+.random-text {
+  position: relative;
+  top: 1.75rem;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.full-back {
+  max-width: none;
+}
+
+.full-back>.row {
+  --bs-gutter-x: 0rem;
+}
+
+.random-back {
+  background-image: url(../../../../assets/img/randomBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+.margin-top {
+  margin-top: 7rem !important;
+}
+
+.fix-height {
+  height: 32rem;
+}
+
+.rects {
+  position: relative;
+  top: -10rem;
+}
+
+.row-height {
+  height: 23rem;
+}
+
+.margin-top10 {
+  margin-top: 13rem !important;
+}
+
+.footer-back {
+  width: 100%;
+  background-image: url(../../../../assets/img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-text-con {
+  width: 19rem;
+  position: relative;
+  bottom: 10rem;
+  right: -33%;
+}
+
+.footer-con {
+  height: 0;
+}
+
+.footer-Logo-con {
+  width: 30rem;
+  position: relative;
+  bottom: 18rem;
+  left: -30%;
+}
+
+.icons {
+  font-size: 2rem;
+  color: white;
+}
+
+.icon-txt {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+}
+
+.input-email {
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 8.51px;
+  border: 0.59px rgba(255, 255, 255, 0.10) solid;
+  backdrop-filter: blur(8.99px);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.96px;
+  display: inline-flex;
+
+}
+
+.email-btn {
+  position: absolute;
+  top: 77%;
+  right: 80%;
+}

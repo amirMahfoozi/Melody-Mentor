@@ -1,16 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoggedInLayoutComponent } from './layouts/logged-in-layout/logged-in-layout.component';
+import { LayoutComponent } from './layouts/layout/layout.component';
+import { LoginComponent } from './dashboard/pages/login/login.component';
+import { SignUpComponent } from './dashboard/pages/sign-up/sign-up.component';
+import { ContactUsComponent } from './dashboard/pages/contact-us/contact-us.component';
+import { HomeComponent } from './dashboard/pages/home/home.component';
+import { CoursePreviewComponent } from './dashboard/components/course-preview/course-preview.component';
+import { KaraokePreviewComponent } from './dashboard/components/karaoke-preview/karaoke-preview.component';
+import { BoxCircleComponent } from './dashboard/components/box-circle/box-circle.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoggedInLayoutComponent,
+    LayoutComponent,
+    LoginComponent,
+    SignUpComponent,
+    ContactUsComponent,
+    HomeComponent,
+    CoursePreviewComponent,
+    KaraokePreviewComponent,
+    BoxCircleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
