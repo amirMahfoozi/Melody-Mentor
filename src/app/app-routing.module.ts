@@ -6,6 +6,7 @@ import { SignUpComponent } from './dashboard/pages/sign-up/sign-up.component';
 import { LoggedInLayoutComponent } from './layouts/logged-in-layout/logged-in-layout.component';
 import { ContactUsComponent } from './dashboard/pages/contact-us/contact-us.component';
 import { HomeComponent } from './dashboard/pages/home/home.component';
+import { FaqComponent } from './dashboard/pages/faq/faq.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,11 @@ const routes: Routes = [
     path: 'home',
     title: 'خانه',
     component: HomeComponent,
+  },
+  {
+    path: 'faq',
+    title: 'سوالات متداول',
+    component: FaqComponent,
   },
   {
     path: '**',
