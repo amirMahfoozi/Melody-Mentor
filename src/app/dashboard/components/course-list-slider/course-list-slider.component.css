@@ -2,3 +2,17 @@
   color: #194F94;
   font-weight: 500;
 }
+
+.btn-move {
+  color: #ff9e00;
+  font-size: 2.5rem;
+}
+
+.btn-size {
+  height: fit-content;
+  width: fit-content;
+}
+
+.btn-right {
+  margin-left: -2rem;
+}

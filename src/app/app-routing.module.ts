@@ -8,6 +8,7 @@ import { ContactUsComponent } from './dashboard/pages/contact-us/contact-us.comp
 import { HomeComponent } from './dashboard/pages/home/home.component';
 import { FaqComponent } from './dashboard/pages/faq/faq.component';
 import { CoursesComponent } from './dashboard/pages/courses/courses.component';
+import { CurrentCourseComponent } from './dashboard/pages/current-course/current-course.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,11 @@ const routes: Routes = [
     path: 'courses',
     title: 'دوره ها',
     component: CoursesComponent,
+  },
+  {
+    path: 'course',
+    title: 'دوره ',
+    component: CurrentCourseComponent,
   },
   {
     path: '**',

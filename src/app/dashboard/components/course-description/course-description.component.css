@@ -1,0 +1,14 @@
+.background {
+  background-image: url(../../../../assets/img/blue-grad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.title-txt {
+  font-size: 2rem !important;
+}
+
+.txt {
+  color: white;
+}

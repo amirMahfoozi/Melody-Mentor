@@ -30,6 +30,7 @@ import { CourseListSliderComponent } from './dashboard/components/course-list-sl
 import { VideoPlayerComponent } from './dashboard/components/video-player/video-player.component';
 import { SessionsListComponent } from './dashboard/components/sessions-list/sessions-list.component';
 import { CourseDescriptionComponent } from './dashboard/components/course-description/course-description.component';
+import { CurrentCourseComponent } from './dashboard/pages/current-course/current-course.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { CourseDescriptionComponent } from './dashboard/components/course-descri
     CourseListSliderComponent,
     VideoPlayerComponent,
     SessionsListComponent,
-    CourseDescriptionComponent
+    CourseDescriptionComponent,
+    CurrentCourseComponent
   ],
   imports: [
     BrowserModule,

@@ -48,8 +48,8 @@
 }
 
 .email-btn {
-  position: absolute;
-  top: 77%;
+  position: relative;
+  top: -1.75rem;
   right: 80%;
 }
 
@@ -76,4 +76,13 @@
 
 .margin-top10 {
   margin-top: 13rem !important;
+}
+
+.link-txt {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-icon {
+  margin-left: 6rem;
 }
