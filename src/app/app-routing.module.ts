@@ -7,6 +7,7 @@ import { LoggedInLayoutComponent } from './layouts/logged-in-layout/logged-in-la
 import { ContactUsComponent } from './dashboard/pages/contact-us/contact-us.component';
 import { HomeComponent } from './dashboard/pages/home/home.component';
 import { FaqComponent } from './dashboard/pages/faq/faq.component';
+import { CoursesComponent } from './dashboard/pages/courses/courses.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,11 @@ const routes: Routes = [
     path: 'faq',
     title: 'سوالات متداول',
     component: FaqComponent,
+  },
+  {
+    path: 'courses',
+    title: 'دوره ها',
+    component: CoursesComponent,
   },
   {
     path: '**',
