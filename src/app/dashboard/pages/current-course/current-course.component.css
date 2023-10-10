@@ -1,5 +1,12 @@
 .background {
-  background-color: aliceblue;
+  background-color: #dae1eb;
   margin: 0;
   max-width: none;
+}
+
+.blue-line {
+  height: 1.5rem !important;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }

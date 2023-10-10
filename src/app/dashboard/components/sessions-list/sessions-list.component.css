@@ -1,0 +1,37 @@
+.header-row {
+  background: linear-gradient(123deg, #063981 0%, #5695CE 100%);
+}
+
+.header-txt {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.lock {
+  font-size: 1.7rem !important;
+}
+
+.arrow {
+  font-size: 2.7rem !important;
+}
+
+.session-row {
+  background: #29394E;
+}
+
+.session-lock {
+  color: #A8FFE5;
+  font-size: 1.5rem !important;
+}
+
+.session-play {
+  color: #5695CE;
+  background-color: white;
+  font-size: 1.5rem !important;
+  border-radius: 50%;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}

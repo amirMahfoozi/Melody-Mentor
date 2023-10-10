@@ -5,6 +5,11 @@
   background-size: cover;
 }
 
+.color {
+  background-color: #DAE1EB;
+}
+
+
 .footer-text-con {
   width: 19rem;
   position: relative;
@@ -13,7 +18,7 @@
 }
 
 .footer-con {
-  height: 0;
+  max-height: 21.5rem;
 }
 
 .footer-Logo-con {
