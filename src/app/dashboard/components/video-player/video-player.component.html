@@ -1,6 +1,6 @@
 <!-- Video Player -->
-<div class="col-12 mb-4 ">
-  <div class="card-body">
+<div class="col-12">
+  <div class="card-body pb-1">
     <video class="w-100 video-border" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
       id="plyr-video-player" playsinline controls>
       <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" />
@@ -8,6 +8,18 @@
   </div>
 </div>
 <!-- /Video Player -->
+<div class="row mb-4 pe-4 justify-content-between">
+  <div class="col-3">
+    <app-custom-button [text]="'167'" icon="bx bx-show-alt" class="me-2"></app-custom-button>
+    <app-custom-button [text]="'نظرات'" icon="bx bx-chat"></app-custom-button>
+  </div>
+  <div class="col-auto">
+    <app-custom-button [text]="'گزارش'" icon="bx bx-error"></app-custom-button>
+    <app-custom-button [text]="'اشتراک گذاری'" icon="bx bx-share-alt" class="me-2"></app-custom-button>
+    <app-custom-button [text]="'0'" icon="bx bx-dislike" class="me-1"></app-custom-button>
+    <app-custom-button [text]="'0'" icon="bx bx-like"></app-custom-button>
+  </div>
+</div>
 
 <div class="container">
   <app-sessions-list></app-sessions-list>
