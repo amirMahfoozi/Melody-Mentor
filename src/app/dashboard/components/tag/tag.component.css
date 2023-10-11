@@ -1,0 +1,16 @@
+.tag {
+  background: linear-gradient(228deg, #053881 0%, #827E92 100%);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.tag-txt {
+  text-align: right;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+}

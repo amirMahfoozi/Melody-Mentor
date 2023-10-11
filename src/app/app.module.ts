@@ -31,6 +31,9 @@ import { VideoPlayerComponent } from './dashboard/components/video-player/video-
 import { SessionsListComponent } from './dashboard/components/sessions-list/sessions-list.component';
 import { CourseDescriptionComponent } from './dashboard/components/course-description/course-description.component';
 import { CurrentCourseComponent } from './dashboard/pages/current-course/current-course.component';
+import { TagComponent } from './dashboard/components/tag/tag.component';
+import { CustomButtonComponent } from './dashboard/components/custom-button/custom-button.component';
+import { HomeworkDescComponent } from './dashboard/components/homework-desc/homework-desc.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,10 @@ import { CurrentCourseComponent } from './dashboard/pages/current-course/current
     VideoPlayerComponent,
     SessionsListComponent,
     CourseDescriptionComponent,
-    CurrentCourseComponent
+    CurrentCourseComponent,
+    TagComponent,
+    CustomButtonComponent,
+    HomeworkDescComponent
   ],
   imports: [
     BrowserModule,

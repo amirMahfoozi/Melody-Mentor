@@ -12,3 +12,8 @@
 .txt {
   color: white;
 }
+
+.tag-txt {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
