@@ -1,5 +1,27 @@
 .course-list {
-  background-color: aliceblue;
+  background-color: #DAE1EB;
   margin: 0;
   max-width: none;
+}
+
+.search-bar {
+  padding-right: 2rem;
+  background: rgba(183, 183, 183, 0.6);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 0.8rem;
+  border: 5.89px rgba(255, 255, 255, 0.05) solid;
+  backdrop-filter: blur(2rem);
+}
+
+.search-icon {
+  position: relative;
+  top: -1.7rem;
+  right: -0.5rem;
+  margin-right: 0.8rem;
+}
+
+.box {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

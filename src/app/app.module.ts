@@ -34,6 +34,7 @@ import { CurrentCourseComponent } from './dashboard/pages/current-course/current
 import { TagComponent } from './dashboard/components/tag/tag.component';
 import { CustomButtonComponent } from './dashboard/components/custom-button/custom-button.component';
 import { HomeworkDescComponent } from './dashboard/components/homework-desc/homework-desc.component';
+import { CourseListComponent } from './dashboard/components/course-list/course-list.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { HomeworkDescComponent } from './dashboard/components/homework-desc/home
     CurrentCourseComponent,
     TagComponent,
     CustomButtonComponent,
-    HomeworkDescComponent
+    HomeworkDescComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
