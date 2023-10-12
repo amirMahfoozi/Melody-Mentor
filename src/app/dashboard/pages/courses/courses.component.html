@@ -2,7 +2,7 @@
   <div class="container mx-0 px-0">
     <div class="row justify-content-between">
       <div class="col-3 pt-5 px-0 mx-2">
-        <div class="card px-5 pt-3 box mb-5">
+        <div class="card px-5 pt-3 box mb-4">
           <div class="row mb-3">
             <span>نام استاد / دوره</span>
           </div>
@@ -16,7 +16,7 @@
           </div>
         </div>
 
-        <div class="card px-5 pt-3 box">
+        <div class="card px-5 pt-3 box mb-4">
           <div class="row mb-3">
             <span>سبک ها</span>
           </div>
@@ -25,13 +25,37 @@
             </div>
           </div>
           <div class="row mb-3">
-            <input type="text" placeholder="جستجوی دوره ها" class="search-bar py-1" /><i
-              class="bx bx-search search-icon"></i>
+            <form>
+              <div class="form-group">
+                <input type="checkbox" id="irani">
+                <label for="irani">ایرانی</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="sonati">
+                <label for="sonati">سنتی</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="pop">
+                <label for="pop">پاپ</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="khareji">
+                <label for="khareji">خارجی</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card py-3 px-5 pt-3 box">
+          <div class="row">
+            <div class="col-4 mx-5">
+              <button type="button" class="btn btn-filter px-5">اعمال</button>
+            </div>
           </div>
         </div>
 
       </div>
-      <div class="col-7 pt-5 ">
+      <div class="col-8 pt-5 ">
         <app-course-list></app-course-list>
       </div>
     </div>

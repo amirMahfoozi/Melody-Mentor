@@ -9,6 +9,7 @@ import { HomeComponent } from './dashboard/pages/home/home.component';
 import { FaqComponent } from './dashboard/pages/faq/faq.component';
 import { CoursesComponent } from './dashboard/pages/courses/courses.component';
 import { CurrentCourseComponent } from './dashboard/pages/current-course/current-course.component';
+import { AboutUsComponent } from './dashboard/pages/about-us/about-us.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,11 @@ const routes: Routes = [
     path: 'course',
     title: 'دوره ',
     component: CurrentCourseComponent,
+  },
+  {
+    path: 'about-us',
+    title: 'about-us ',
+    component: AboutUsComponent,
   },
   {
     path: '**',

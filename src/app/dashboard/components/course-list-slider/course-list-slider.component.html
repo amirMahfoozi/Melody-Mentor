@@ -2,12 +2,37 @@
   <div class="row justify-content-center">
     <h3 class="course-header col-auto">جدید ترین دوره های ملودی منتور</h3>
   </div>
-  <div class="row mt-5 justify-content-between mb-5">
-    <button class="btn p-0 col-1 btn-size my-auto btn-right"><i
-        class="bx bx-chevron-right-circle btn-move"></i></button>
-    <app-course-preview class="col-3" [picUrl]="'../../../../assets/img/course-1.png'"></app-course-preview>
-    <app-course-preview class="col-3" [picUrl]="'../../../../assets/img/course2.png'"></app-course-preview>
-    <app-course-preview class="col-3" [picUrl]="'../../../../assets/img/course3.png'"></app-course-preview>
-    <button class="btn p-0 col-1 btn-size my-auto"><i class="bx bx-chevron-left-circle btn-move"></i></button>
+  <!-- <div class="swiper-container" id="swiper-multiple-slides">
+    <div class="swiper-wrapper">
+      <app-course-preview class=" swiper-slide py-0"
+        [picUrl]="'../../../../assets/img/course-1.png'"></app-course-preview>
+
+      <app-course-preview class=" swiper-slide py-0"
+        [picUrl]="'../../../../assets/img/course2.png'"></app-course-preview>
+
+      <app-course-preview class=" swiper-slide py-0"
+        [picUrl]="'../../../../assets/img/course3.png'"></app-course-preview>
+
+      <app-course-preview class=" swiper-slide py-0"
+        [picUrl]="'../../../../assets/img/course-1.png'"></app-course-preview>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div> -->
+  <div class="swiper-container height" id="swiper-multiple-slides">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-color: transparent;">
+        <app-course-preview [picUrl]="'../../../../assets/img/course2.png'"></app-course-preview>
+      </div>
+      <div class="swiper-slide" style="background-color: transparent;">
+        <app-course-preview [picUrl]="'../../../../assets/img/course-1.png'"></app-course-preview>
+      </div>
+      <div class="swiper-slide" style="background-color: transparent;">
+        <app-course-preview [picUrl]="'../../../../assets/img/course3.png'"></app-course-preview>
+      </div>
+      <div class="swiper-slide" style="background-color: transparent;">
+        <app-course-preview [picUrl]="'../../../../assets/img/course2.png'"></app-course-preview>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
   </div>
-</div>

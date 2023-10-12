@@ -16,3 +16,7 @@
 .btn-right {
   margin-left: -2rem;
 }
+
+.height {
+  height: auto !important;
+}
