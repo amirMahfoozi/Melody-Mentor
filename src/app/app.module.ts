@@ -37,6 +37,7 @@ import { HomeworkDescComponent } from './dashboard/components/homework-desc/home
 import { CourseListComponent } from './dashboard/components/course-list/course-list.component';
 import { VoicePlayerComponent } from './dashboard/components/voice-player/voice-player.component';
 import { VoicesComponent } from './dashboard/components/voices/voices.component';
+import { MenuComponent } from './dashboard/components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { VoicesComponent } from './dashboard/components/voices/voices.component'
     HomeworkDescComponent,
     CourseListComponent,
     VoicePlayerComponent,
-    VoicesComponent
+    VoicesComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

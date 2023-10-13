@@ -3,3 +3,19 @@
   margin: 0;
   max-width: none;
 }
+
+.search-bar {
+  padding-right: 2rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 1.5rem;
+  border: 5.89px rgba(255, 255, 255, 0.05) solid;
+  backdrop-filter: blur(2rem);
+}
+
+.search-icon {
+  position: relative;
+  top: -1.9rem;
+  right: 0.8rem;
+}

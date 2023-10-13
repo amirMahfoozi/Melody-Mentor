@@ -1,0 +1,42 @@
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme radius">
+  <div class="menu-inner-shadow"></div>
+  <ul class="menu-inner py-1">
+    <!-- Page -->
+    <li class="menu-item my-2" [ngClass]="{'active' : current == '/dashboard'}">
+      <a routerLink="/dashboard" routerLinkActive="true" class="menu-link py-4">
+        <i class="menu-icon tf-icons bx bxs-dashboard"></i>
+        <div data-i18n="Page 1">داشبورد</div>
+      </a>
+    </li>
+    <li class="menu-item my-2" [ngClass]="{'active' : current == '/profile'}">
+      <a routerLink="/profile" routerLinkActive="true" class="menu-link py-4">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="Page 2">پروفایل</div>
+      </a>
+    </li>
+    <li class="menu-item my-2" [ngClass]="{'active' : current == '/my-courses'}">
+      <a routerLink="/my-courses" routerLinkActive="true" class="menu-link py-4">
+        <i class="menu-icon tf-icons bx bx-movie-play"></i>
+        <div data-i18n="Page 3">دوره های من</div>
+      </a>
+    </li>
+    <li class="menu-item my-2" [ngClass]="{'active' : current == '/homework'}">
+      <a routerLink="/homework" routerLinkActive="true" class="menu-link py-4">
+        <i class="menu-icon tf-icons bx bx-music"></i>
+        <div data-i18n="Page 4">تمرین های من</div>
+      </a>
+    </li>
+    <li class="menu-item my-2" [ngClass]="{'active' : current == '/payment'}">
+      <a routerLink="/payment" routerLinkActive="true" class="menu-link py-4">
+        <i class="menu-icon tf-icons bx bx-cart"></i>
+        <div data-i18n="Page 5">سفارشات</div>
+      </a>
+    </li>
+    <li class="menu-item my-2" [ngClass]="{'active' : current == '/login'}">
+      <a routerLink="/login" routerLinkActive="true" class="menu-link py-4">
+        <i class="menu-icon tf-icons bx bx-log-out"></i>
+        <div data-i18n="Page 6">خروج</div>
+      </a>
+    </li>
+  </ul>
+</aside>
