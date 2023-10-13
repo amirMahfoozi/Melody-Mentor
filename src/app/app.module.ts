@@ -35,6 +35,8 @@ import { TagComponent } from './dashboard/components/tag/tag.component';
 import { CustomButtonComponent } from './dashboard/components/custom-button/custom-button.component';
 import { HomeworkDescComponent } from './dashboard/components/homework-desc/homework-desc.component';
 import { CourseListComponent } from './dashboard/components/course-list/course-list.component';
+import { VoicePlayerComponent } from './dashboard/components/voice-player/voice-player.component';
+import { VoicesComponent } from './dashboard/components/voices/voices.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { CourseListComponent } from './dashboard/components/course-list/course-l
     TagComponent,
     CustomButtonComponent,
     HomeworkDescComponent,
-    CourseListComponent
+    CourseListComponent,
+    VoicePlayerComponent,
+    VoicesComponent
   ],
   imports: [
     BrowserModule,
