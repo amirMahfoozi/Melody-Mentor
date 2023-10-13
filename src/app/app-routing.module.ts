@@ -11,6 +11,8 @@ import { CoursesComponent } from './dashboard/pages/courses/courses.component';
 import { CurrentCourseComponent } from './dashboard/pages/current-course/current-course.component';
 import { AboutUsComponent } from './dashboard/pages/about-us/about-us.component';
 import { HomeworkComponent } from './dashboard/pages/homework/homework.component';
+import { ProfileComponent } from './dashboard/pages/profile/profile.component';
+import { ChangePasswordComponent } from './dashboard/components/change-password/change-password.component';
 
 const routes: Routes = [
   {
@@ -52,6 +54,16 @@ const routes: Routes = [
     path: 'homework',
     title: 'homework ',
     component: HomeworkComponent,
+  },
+  {
+    path: 'profile',
+    title: 'profile ',
+    component: ProfileComponent,
+  },
+  {
+    path: 'change-password',
+    title: 'changePassword ',
+    component: ChangePasswordComponent,
   },
   {
     path: 'about-us',
