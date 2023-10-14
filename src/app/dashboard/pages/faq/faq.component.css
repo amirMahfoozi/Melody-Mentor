@@ -49,3 +49,14 @@ html:not([dir=rtl]) .faq-header:after {
 .dark-style .bg-faq-section {
   background-color: rgba(99, 123, 169, 0.08);
 }
+
+.background {
+  background-color: #dae1eb;
+  margin: 0;
+  max-width: none;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: 800;
+}
