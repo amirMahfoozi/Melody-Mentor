@@ -39,6 +39,7 @@ import { VoicePlayerComponent } from './dashboard/components/voice-player/voice-
 import { VoicesComponent } from './dashboard/components/voices/voices.component';
 import { MenuComponent } from './dashboard/components/menu/menu.component';
 import { ChangePasswordComponent } from './dashboard/components/change-password/change-password.component';
+import { MyCourseListComponent } from './dashboard/components/my-course-list/my-course-list.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { ChangePasswordComponent } from './dashboard/components/change-password/
     VoicePlayerComponent,
     VoicesComponent,
     MenuComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    MyCourseListComponent
   ],
   imports: [
     BrowserModule,

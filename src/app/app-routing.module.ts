@@ -13,6 +13,7 @@ import { AboutUsComponent } from './dashboard/pages/about-us/about-us.component'
 import { HomeworkComponent } from './dashboard/pages/homework/homework.component';
 import { ProfileComponent } from './dashboard/pages/profile/profile.component';
 import { ChangePasswordComponent } from './dashboard/components/change-password/change-password.component';
+import { MyCoursesComponent } from './dashboard/pages/my-courses/my-courses.component';
 
 const routes: Routes = [
   {
@@ -59,6 +60,11 @@ const routes: Routes = [
     path: 'profile',
     title: 'profile ',
     component: ProfileComponent,
+  },
+  {
+    path: 'my-courses',
+    title: 'my-courses ',
+    component: MyCoursesComponent,
   },
   {
     path: 'change-password',
