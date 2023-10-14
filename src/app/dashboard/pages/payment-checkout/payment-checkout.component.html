@@ -1,1 +1,123 @@
-<p>payment-checkout works!</p>
+<div class="container background p-5 pt-3 pe-3 ps-0">
+  <div class="row justify-content-around">
+    <div class="col-2 px-0">
+      <app-menu></app-menu>
+    </div>
+    <div class="col-9">
+      <div class="card p-3">
+        <div id="checkout-cart" class="content">
+          <div class="row">
+            <!-- Cart left -->
+            <div class="col-xl-8 mb-3 mb-xl-0">
+
+
+              <!-- Shopping bag -->
+              <h5 class="secondary-font">سبد خرید من (2 دوره)</h5>
+              <ul class="list-group mb-3">
+                <li class="list-group-item p-4">
+                  <div class="d-flex gap-3">
+                    <div class="flex-shrink-0">
+                      <img src="../../../../assets/img/course2.png" alt="google home" class="w-px-100 img-border">
+                    </div>
+                    <div class="flex-grow-1">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h6 class="fw-normal mb-2 me-3">
+                            <a href="javascript:void(0)" class="text-body">لورم ایپسوم متن ساختگی با تولید</a>
+                          </h6>
+
+                          <div class="read-only-ratings mb-3" data-rateyo-read-only="true"></div>
+                          <input type="number" class="form-control form-control-sm w-px-75" value="1" min="1" max="5">
+                        </div>
+                        <div class="col-md-4 ps-0">
+                          <div class="text-md-end">
+                            <button type="button" class="btn-close btn-pinned" aria-label="Close"></button>
+                            <div class="my-2 my-md-4">
+                              <span class="text-primary">299,000 تومان/</span><s class="text-muted">359,000 تومان</s>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item p-4">
+                  <div class="d-flex gap-3">
+                    <div class="flex-shrink-0">
+                      <img src="../../../../assets/img/course-1.png" alt="google home" class="w-px-100 img-border">
+                    </div>
+                    <div class="flex-grow-1">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h6 class="fw-normal mb-2 me-3">
+                            <a href="javascript:void(0)" class="text-body">لورم ایپسوم متن ساختگی با تولید</a>
+                          </h6>
+                          <div class="read-only-ratings mb-3" data-rateyo-read-only="true"></div>
+                          <input type="number" class="form-control form-control-sm w-px-75" value="1" min="1" max="5">
+                        </div>
+                        <div class="col-md-4 ps-0">
+                          <div class="text-md-end">
+                            <button type="button" class="btn-close btn-pinned" aria-label="Close"></button>
+                            <div class="my-2 my-md-4">
+                              <span class="text-primary">299,000 تومان/</span><s class="text-muted">359,000 تومان</s>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Cart right -->
+            <div class="col-xl-4">
+              <div class="border rounded p-3 mb-3">
+                <!-- Offer -->
+                <h6 class="secondary-font">پیشنهاد</h6>
+                <div class="row g-3 mb-3">
+                  <div class="col-8 col-xxl-8 col-xl-12">
+                    <input type="text" class="form-control" placeholder="کد تخفیف را وارد کنید"
+                      aria-label="Enter Promo Code">
+                  </div>
+                  <div class="col-4 col-xxl-4 col-xl-12">
+                    <div class="d-grid">
+                      <button type="button" class="btn btn-label-primary">اعمال</button>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Price Details -->
+                <h6 class="secondary-font">جزئیات قیمت</h6>
+                <dl class="row mb-0">
+                  <dt class="col-6 fw-normal">جمع سبد</dt>
+                  <dd class="col-6 text-end">1,198,000 تومان</dd>
+
+                  <dt class="col-6 fw-normal">کد تخفیف</dt>
+                  <dd class="col-6 text-primary text-end">اعمال کد تخفیف</dd>
+
+                  <dt class="col-6 fw-normal">مجموع سفارش</dt>
+                  <dd class="col-6 text-end">1,100,000 تومان</dd>
+
+                  <hr>
+
+                  <dt class="col-6">جمع</dt>
+                  <dd class="col-6 fw-semibold text-end mb-0">1,100,000 تومان</dd>
+                </dl>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-next">ثبت سفارش</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="container background p-0 pt-5">
+  <app-footer></app-footer>
+</div>
