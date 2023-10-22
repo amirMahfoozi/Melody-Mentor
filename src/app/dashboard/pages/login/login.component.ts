@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from '../../../auth/services/login.service';
+import * as Models from "../../../auth/models/login";
+import * as Interfaces from "../../../auth/interfaces/login";
+
+
+
 
 @Component({
   selector: 'app-login',
@@ -9,9 +15,10 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   translate: any;
   cookieService: any;
-  public constructor(private router: Router) {
+  public constructor(private router: Router, private loginService: LoginService,) {
     this.submitted = false;
     localStorage.removeItem('id_token');
+    this.login = new Models.Login();
     this.passwordIsShow = `password`;
   }
 
@@ -19,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   public passwordIsShow: string;
   public submitted: boolean;
-  public login: any;
+  public login: Interfaces.Login;
   public loginResponse?: any;
 
   public thisCulture: any;
@@ -29,30 +36,18 @@ export class LoginComponent implements OnInit {
   public onSubmit(): void {
     this.submitted = true;
 
-    // this.loginService.getToken(this.login)
-    //   .subscribe(
-    //     result => {
-    //       if (result.token == `UNAUTHORIZED`) {
-    //         this.messageService.add(`نام‌کاربری و یا رمز‌عبور اشتباه است`)
-    //         this.messageService.addinfo(result);
-    //       } else {
-    //         this.loginResponse = result;
-    //         localStorage.setItem('id_token', this.loginResponse.token);
-    //         this.router.navigate(["home"]);
-    //       }
-    //       this.submitted = false;
-    //     },
-    //     error => {
-    //       if (error.status == 500 && error.error.status == 500) {
-    //         this.messageService.add(`نام‌کاربری و یا رمز‌عبور اشتباه است`)
-    //       }
-    //       this.messageService.addinfo(error);
-    //       this.submitted = false;
-    //     },
-    //     () => {
-    //       console.log(`Completed!`);
-    //     }
-    //   );
+    if (this.loginService.getToken(this.login) == "ok") {
+      this.loginResponse = "ok";
+      localStorage.setItem('id_token', this.loginResponse);
+      this.router.navigate(["home"]);
+    }
+    else {
+      console.log(this.login.username + "  " + this.login.password)
+      console.log(this.loginService.getToken(this.login));
+      console.log(`نام‌کاربری و یا رمز‌عبور اشتباه است`)
+
+    }
+    this.submitted = false
   }
 
   public changePasswordState() {

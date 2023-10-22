@@ -15,77 +15,107 @@ import { ProfileComponent } from './dashboard/pages/profile/profile.component';
 import { ChangePasswordComponent } from './dashboard/components/change-password/change-password.component';
 import { MyCoursesComponent } from './dashboard/pages/my-courses/my-courses.component';
 import { PaymentCheckoutComponent } from './dashboard/pages/payment-checkout/payment-checkout.component';
-
+import { authGuard } from './auth.guard';
 const routes: Routes = [
+
   {
-    path: 'login',
-    title: 'ورود',
-    component: LoginComponent
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: '/login',
+        pathMatch: 'full',
+      },
+      {
+        path: 'login',
+        title: 'ورود',
+        component: LoginComponent
+      },
+      {
+        path: 'register',
+        title: 'ثبت نام',
+        component: SignUpComponent,
+      },
+    ]
   },
+
   {
-    path: 'register',
-    title: 'ثبت نام',
-    component: SignUpComponent,
-  },
-  {
-    path: 'contact-us',
-    title: 'ارتباط با ما',
-    component: ContactUsComponent,
-  },
-  {
-    path: 'home',
-    title: 'خانه',
-    component: HomeComponent,
-  },
-  {
-    path: 'faq',
-    title: 'سوالات متداول',
-    component: FaqComponent,
-  },
-  {
-    path: 'courses',
-    title: 'دوره ها',
-    component: CoursesComponent,
-  },
-  {
-    path: 'course',
-    title: 'دوره ',
-    component: CurrentCourseComponent,
-  },
-  {
-    path: 'homework',
-    title: 'homework ',
-    component: HomeworkComponent,
-  },
-  {
-    path: 'profile',
-    title: 'profile ',
-    component: ProfileComponent,
-  },
-  {
-    path: 'my-courses',
-    title: 'my-courses ',
-    component: MyCoursesComponent,
-  },
-  {
-    path: 'payment',
-    title: 'payment ',
-    component: PaymentCheckoutComponent,
-  },
-  {
-    path: 'change-password',
-    title: 'changePassword ',
-    component: ChangePasswordComponent,
-  },
-  {
-    path: 'about-us',
-    title: 'about-us ',
-    component: AboutUsComponent,
-  },
-  {
-    path: '**',
-    redirectTo: '/login',
-    pathMatch: 'full',
+    path: '',
+    component: LoggedInLayoutComponent,
+    children: [
+      {
+        path: 'contact-us',
+        title: 'ارتباط با ما',
+        component: ContactUsComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'home',
+        title: 'خانه',
+        component: HomeComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'faq',
+        title: 'سوالات متداول',
+        component: FaqComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'courses',
+        title: 'دوره ها',
+        component: CoursesComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'course',
+        title: 'دوره ',
+        component: CurrentCourseComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'homework',
+        title: 'homework ',
+        component: HomeworkComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'profile',
+        title: 'profile ',
+        component: ProfileComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'my-courses',
+        title: 'my-courses ',
+        component: MyCoursesComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'payment',
+        title: 'payment ',
+        component: PaymentCheckoutComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'change-password',
+        title: 'changePassword ',
+        component: ChangePasswordComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'about-us',
+        title: 'about-us ',
+        component: AboutUsComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: '**',
+        redirectTo: '/login',
+        pathMatch: 'full',
+      },
+    ]
   },
 ];
 

@@ -40,7 +40,7 @@ import { VoicesComponent } from './dashboard/components/voices/voices.component'
 import { MenuComponent } from './dashboard/components/menu/menu.component';
 import { ChangePasswordComponent } from './dashboard/components/change-password/change-password.component';
 import { MyCourseListComponent } from './dashboard/components/my-course-list/my-course-list.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,7 +85,8 @@ import { MyCourseListComponent } from './dashboard/components/my-course-list/my-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

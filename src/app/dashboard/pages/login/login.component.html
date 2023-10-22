@@ -10,7 +10,7 @@
       <label class="label-text" for="username">نام کاربری:</label>
     </div>
     <div class="row mb-3">
-      <input class="input-text" name="username" id="username" type="text" />
+      <input class="input-text" name="username" id="username" type="text" [(ngModel)]="this.login.username" />
     </div>
     <div class="row mb-2">
       <label class="label-text" for="password">رمز عبور:
@@ -18,13 +18,14 @@
       </label>
     </div>
     <div class="row mb-1">
-      <input class="input-text" name="password" id="password" [attr.type]="passwordIsShow" />
+      <input class="input-text" name="password" id="password" [attr.type]="passwordIsShow"
+        [(ngModel)]="this.login.password" />
     </div>
     <div class="row mb-4">
       <a class="link-text" routerLink="/forgot" routerLinkActive="true">فراموشی رمز عبور ؟</a>
     </div>
     <div class="row mb-2">
-      <button type="button" class="btn btn-primary submit-btn">ورود</button>
+      <button type="button" class="btn btn-primary submit-btn" (click)="onSubmit()">ورود</button>
     </div>
     <div class="row center-block text-center mb-4 mt-2">
       <label class="label-text">اکانت ندارید؟ <a routerLink="/register" routerLinkActive="true" class="register-txt">ثبت
