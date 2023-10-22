@@ -32,6 +32,10 @@
   border: 0.2rem solid #FF681D;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 /* .sixth {
   border-color: $green;
   color: $green;

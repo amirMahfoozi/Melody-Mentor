@@ -16,6 +16,88 @@
       <a class="nav-item nav-link nav-link-text mx-2" routerLink="'/home'" routerLinkActive="true">درباره ما</a>
     </div>
   </div>
-  <span class="mx-2 user-text">نیما نوروزی</span>
-  <img src="../../../assets/img/user-icon.svg" height="35" class="d-inline-block align-bottom" alt="user">
+  <ul class="navbar-nav flex-row align-items-center ms-auto">
+    <!-- User -->
+    <li class="nav-item navbar-dropdown dropdown-user dropdown">
+      <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+        <div class="avatar avatar-online">
+          <img src="../../../assets/img/Avatar.png" alt class="rounded-circle">
+        </div>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li>
+          <a class="dropdown-item" href="pages-account-settings-account.html">
+            <div class="d-flex">
+              <div class="flex-shrink-0 me-3">
+                <div class="avatar avatar-online mt-1">
+                  <img src="../../../assets/img/Avatar.png" alt class="rounded-circle">
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <span class="fw-semibold d-block">جان اسنو</span>
+                <small>مدیر</small>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-divider"></div>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLink="/profile" routerLinkActive="true">
+            <i class="bx bx-user me-2"></i>
+            <span class="align-middle">پروفایل من</span>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLink="/my-courses" routerLinkActive="true">
+            <i class="bx bx-movie-play me-2"></i>
+            <span class="align-middle">دوره های من</span>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLink="/homework" routerLinkActive="true">
+            <span class="d-flex align-items-center align-middle">
+              <i class="flex-shrink-0 bx bx-music me-2"></i>
+              <span class="flex-grow-1 align-middle">تمرین ها</span>
+              <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-divider"></div>
+        </li>
+        <li>
+          <a class="dropdown-item" href="pages-help-center-landing.html">
+            <i class="bx bx-support me-2"></i>
+            <span class="align-middle">راهنمایی</span>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLink="/faq" routerLinkActive="true">
+            <i class="bx bx-help-circle me-2"></i>
+            <span class="align-middle">سوالات متداول</span>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="pages-pricing.html">
+            <i class="bx bx-dollar me-2"></i>
+            <span class="align-middle">قیمت گذاری</span>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-divider"></div>
+        </li>
+        <li>
+          <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+            <i class="bx bx-power-off me-2"></i>
+            <span class="align-middle">خروج</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--/ User -->
+  </ul>
+  <!-- <span class="mx-2 user-text">نیما نوروزی</span>
+  <img src="../../../assets/img/user-icon.svg" height="35" class="d-inline-block align-bottom" alt="user"> -->
 </nav>

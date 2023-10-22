@@ -60,10 +60,11 @@
   height: 1rem;
   position: relative;
   top: 1.9rem;
-  right: 15.5rem;
+  right: 12rem;
   background-image: url(../../../../assets/img/View_alt_light.png);
+  background-repeat: no-repeat;
 }
 
 .fix-position {
-  right: 13.4rem !important;
+  right: 9.9rem !important;
 }
