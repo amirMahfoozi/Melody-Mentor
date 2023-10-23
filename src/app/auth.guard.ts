@@ -8,10 +8,9 @@ export const authGuard = () => {
 
   var storageData = localStorage.getItem('id_token')
 
-  if (!authorizedService.hasAuthenticate) {
-    router.navigateByUrl('/notauthorized');
+  if (!storageData) {
+    router.navigateByUrl('/login');
     return false;
   }
-
   return true;
 };

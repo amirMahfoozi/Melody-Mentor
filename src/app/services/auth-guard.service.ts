@@ -9,6 +9,7 @@ export class AuthGuardService implements CanActivate {
   ) { }
 
   canActivate(): boolean {
+    console.log("seda shod")
     var storageData = localStorage.getItem('id_token')
 
     if (!storageData) {

@@ -50,7 +50,6 @@ export class AuthenticationService {
       this.router.navigateByUrl('/notauthorized');
       return false;
     }
-
     return true;
   }
 }
